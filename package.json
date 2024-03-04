@@ -1,0 +1,29 @@
+{
+  "name": "so-dashboard-api",
+  "version": "1.0.0",
+  "description": "Apis to produce messages for other components of the system and stotre data to mysql database",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^4.0.0",
+    "express": "^4.17.1",
+    "express-joi-validation": "^5.0.0",
+    "joi": "^17.3.0",
+    "joi-password-complexity": "^4.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "kafka-node": "^5.0.0",
+    "lodash": "^4.17.20",
+    "mysql2": "^2.2.5",
+    "node-mysql-wrapper": "^2.4.0",
+    "nodemon": "^3.0.3",
+    "sequelize": "^6.3.5"
+  }
+}
