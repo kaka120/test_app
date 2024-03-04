@@ -32,7 +32,9 @@ const login = async function (req, res) {
     }
 
     if (data.length == 0) {
-      res.status(400).end("Invalid email or password");
+      res
+        .status(400)
+        .send({ auth: true, message: "Invalid email or password" });
     } else if (data.length > 0) {
       console.log("err");
       const validatePassword = await bcrypt.compare(
