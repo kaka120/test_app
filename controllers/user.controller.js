@@ -197,9 +197,9 @@ const create = async function (req, res) {
       if (dataCount === 0) {
         User.update(insert)
           .then((res1) => {
-            //console.log(res1);
+            console.log(res1);
             res.send({
-              message: "User created",
+              message: req.body.user_email + " sccuessfully registared ",
             });
           })
           .catch((err) => {
