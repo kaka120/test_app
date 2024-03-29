@@ -49,6 +49,7 @@ const login = async function (req, res) {
         const payload = {
           user_id: data[0].userId,
           user_email: data[0].userEmail,
+          user_Name: data[0].userFirstName + " " + data[0].userLastName
         };
         const token = helperObj.generateAuthToken(
           payload,
@@ -56,7 +57,7 @@ const login = async function (req, res) {
         );
         //res.end(token);
 
-        res.status(200).send({ message: { auth: true, token: token } });
+        res.status(200).send({ message: { auth: true, token: token, payload:data[0].userFirstName + " " + data[0].userLastName } });
       }
     }
   });
